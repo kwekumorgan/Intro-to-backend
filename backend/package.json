@@ -1,8 +1,9 @@
 {
   "name": "intro-to-backend",
   "version": "1.0.0",
-  "description": "introduction to backend ",
+  "description": "introduction to backend",
   "homepage": "https://github.com/kwekumorgan/Intro-to-backend#readme",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/kwekumorgan/Intro-to-backend/issues"
   },
@@ -12,12 +13,18 @@
   },
   "license": "ISC",
   "author": "Kweku Morgan",
-  "type": "commonjs",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "express": "^5.2.1"
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
   }
 }
